@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/css/style.css" >
+  </head>
+  <body >
+    <div class ="main">
+      <div class="container">
+        
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <h4> Currency Coverter </h4>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="amount">Amount</label>
+            <input class="form-control" type="text" value="1" name="amount" id="amount" placeholder="Enter amount" required/>  
+          </div>
+          
+          <div class="col-md-4 mb-3">
+            <label for="fromCurrency">From Currency of</label>
+            <select class="form-control" id="fromCurrency">
+              <option>USD</option>
+            </select> 
+          </div>
+          
+          <div class="col-md-4 mb-3">
+            <label for="toCurrency">To Currency of</label>
+            <select class="form-control" id="toCurrency">
+              <option>INR</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-row row align-items-end">
+          <div class="col-md-6 mb-3">
+            <label for="conversionRate">Conversion Rate</label>
+            <input class="form-control" readonly id="conversionRate"/>
+          </div>
+          <div class="col-md-3 mb-3" >
+            <button class="converbtn btn btn-primary" id="convert" type="submit">Get Conversion Rate</button>
+          </div> 
+        </div>
+
+      </div>
+    </div>
+
+    <script src="/js/jquery.js" ></script>
+    <script src="/js/bootstrap.min.js" ></script>
+    <script src="/js/popup.js"></script>
+  </body>
+</html>
